@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <form>
+
+    <label >اسم المستشفى</label>
+    <input type="text" value="مستشفى جامعة العلوم"  readonly>
+    <br>
+    <label >الإسم الأول</label>
+    <input type="text" id="الاسم الاول" name="الاسم الاول"  maxlength="20" autofocus>
+    <br>
+    <label >الإسم الأخير</label>
+    <input type="text"  id="الإسم الأخير" name="الإسم الأخير" maxlength="30">
+    <br> 
+    <label >البريد الإلكتروني</label>
+    <input type="email" autocomplete="on" id="email" name="email"  >
+    <br> 
+    <label >الهاتف</label>
+    <input type="tel" id="الهاتف" name="الهاتف" value="77" minlength="9" maxlength="9" >
+    <br> 
+    <label for="password" >كلمة المرور</label>
+    <input type="password"  id="select"  pattern="[A-Za-z]{8}">
+    <br> 
+    <label >رابط الوصول</label>
+    <input type="url" name="url">
+    <br> 
+    <label >العمر</label>
+    <input type="number" id="العمر" name="العمر" value="20" max="100" >
+    <br>  
+    <label >التأريخ </label>
+    <input type="date" id="التأريخ" name="التأريخ" min="2000-01-01">
+    <br>  
+    <label >الوقت</label>
+    <input type="time" id="الوقت" name="الوقت">
+    <br> 
+    <label > التكلفة</label>
+    <input type="number" id="التكلفة"  name="التكلفة" max="1000" > 
+    <br>
+    <label >الجنس</label>
+    <label >ذكر</label>
+        <input type="radio" id="ذكر" name="ذكر" checked >
+        <label>أنثى</label>
+    <input type="radio" id="أنثى" name="ذكر" >
+    <br>
+    <label >القسم</label>
+    <select name="choose department" id="">
+        <option value="" selected >القلب</option>
+        <option value="" >الباطنية</option>
+        <option value="" disabled>الطوارئ</option>
+        <option value="">العيون</option>
+    </select>
+    <br>
+<label >اختر المدينة</label>
+<input  list="cites">
+<datalist id="cites">
+<option value="صنعاء">
+<option value="الحديدة">
+<option value="اب">
+<option value="تعز">
+
+</datalist>
+
+    <br>
+    <label >ملاحظات</label>
+<br>
+<textarea name="note" id="" cols="20" rows="15"></textarea>
+    <br>
+    <input type="hidden" value="555">
+    <label >الصورة </label>
+    <input type="file" name="image" multiple > 
+    <br>
+    <input type="submit" value="إرسال البيانات">
+    <input type="reset">
+ </form>   
+</body>
+</html>
